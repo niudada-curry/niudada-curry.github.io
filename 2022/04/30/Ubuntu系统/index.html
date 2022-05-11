@@ -9,6 +9,8 @@
     
     <title>
         
+            Ubuntu |
+        
         niu
     </title>
     
@@ -176,7 +178,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation"></span>
+            <span class="title-hover-animation">Ubuntu</span>
         </div>
 
         
@@ -195,13 +197,28 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fas fa-edit"></i>&nbsp;
-        <span class="pc">2022-04-08 16:38:15</span>
-        <span class="mobile">2022-04-08 16:38</span>
+        <span class="pc">2022-04-30 14:06:00</span>
+        <span class="mobile">2022-04-30 14:06</span>
     </span>
     
     
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Linux-Ubuntu/">Linux,Ubuntu</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
 
     
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>337 字</span>
+        </span>
     
     
         <span class="article-min2read article-meta-item">
@@ -217,11 +234,35 @@
         
 
         <div class="article-content markdown-body">
-            
+            <h1 id="Ubuntu系统"><a href="#Ubuntu系统" class="headerlink" title="Ubuntu系统"></a>Ubuntu系统</h1><h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><h3 id="1-1-文件系统"><a href="#1-1-文件系统" class="headerlink" title="1.1.文件系统"></a>1.1.文件系统</h3><p>linux,使用统一的目录树结构</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/</span><br><span class="line">/home/niudada</span><br><span class="line">/root</span><br><span class="line">/bin</span><br><span class="line">/mnt</span><br><span class="line">/usr</span><br><span class="line">/etc</span><br></pre></td></tr></table></figure>
+
+<p>注意：linux下没有C:D:盘符的概念</p>
+<h3 id="1-2-用户目录"><a href="#1-2-用户目录" class="headerlink" title="1.2.用户目录"></a>1.2.用户目录</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/home/niudada 称为niudada的用户目录</span><br><span class="line">linux系统支持多个用户，每个用户一个目录</span><br><span class="line">都有一个超级用户root，其用户目录为/root</span><br><span class="line">root用户没有限制，可以操作任意文件和目录</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-创建目录和文件"><a href="#2-创建目录和文件" class="headerlink" title="2.创建目录和文件"></a>2.创建目录和文件</h2><h3 id="2-1-文件列表ls"><a href="#2-1-文件列表ls" class="headerlink" title="2.1.文件列表ls"></a>2.1.文件列表ls</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ls,即list，列出目录下的所有项</span><br><span class="line">查看当前的目录</span><br><span class="line">ls</span><br><span class="line">查看/home/niudada目录</span><br><span class="line">ls /home/niudada </span><br><span class="line"></span><br><span class="line">以详细模式查看</span><br><span class="line">ls -l /home/niudada</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-显示当前位置"><a href="#2-2-显示当前位置" class="headerlink" title="2.2.显示当前位置"></a>2.2.显示当前位置</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pwd :print working diectory</span><br><span class="line">显示当前工作目录</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-3-切换目录cd"><a href="#2-3-切换目录cd" class="headerlink" title="2.3.切换目录cd"></a>2.3.切换目录cd</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd : change directory,切换目录</span><br><span class="line">切换到某个目录</span><br><span class="line">cd /home/niudada/example</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-4-几个特殊的目录"><a href="#2-4-几个特殊的目录" class="headerlink" title="2.4.几个特殊的目录"></a>2.4.几个特殊的目录</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">~ 当前用户的主目录</span><br><span class="line">. 当前目录</span><br><span class="line">.. 上一级目录</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-5-目录操作"><a href="#2-5-目录操作" class="headerlink" title="2.5.目录操作"></a>2.5.目录操作</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">mkdir : make directory 创建目录</span><br><span class="line">mkdir abc</span><br><span class="line">mkdir -p abc/123/test</span><br><span class="line">使用 -p 可以将路径的层次目录全部创建</span><br><span class="line"></span><br><span class="line">rmdir remove directory 删除空目录</span><br><span class="line">rmdir abc  如果目录非空，则删除失败</span><br><span class="line"></span><br><span class="line">rm remove 删除文件或者目录</span><br><span class="line">rm -rf abc 删除abc目录，和子项一并删除</span><br><span class="line"></span><br><span class="line">cp copy 复制文件或者目录</span><br><span class="line">cp -rf example example2</span><br><span class="line"></span><br><span class="line">mv move 移动文件或目录（重命名）</span><br></pre></td></tr></table></figure>
+
+
         </div>
 
         
 
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/Linux-Ubuntu/">#Linux,Ubuntu</a>&nbsp;
+                    </li>
+                
+            </ul>
         
 
         
@@ -230,13 +271,13 @@
                     <div class="article-prev">
                         <a class="prev"
                            rel="prev"
-                           href="/2022/04/30/Ubuntu%E7%B3%BB%E7%BB%9F/"
+                           href="/2022/05/11/%E4%BD%8D%E5%9B%BE%20%E4%BD%8D%E8%BF%90%E7%AE%97%E5%AE%9E%E7%8E%B0%E5%8A%A0%E5%87%8F%E4%B9%98%E9%99%A4/"
                         >
                             <span class="left arrow-icon flex-center">
                               <i class="fas fa-chevron-left"></i>
                             </span>
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Ubuntu</span>
+                                <span class="post-nav-title-item">位图 位运算实现加减乘除</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
@@ -246,10 +287,10 @@
                     <div class="article-next">
                         <a class="next"
                            rel="next"
-                           href="/2022/04/07/Markdown%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"
+                           href="/2022/04/08/%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/"
                         >
                             <span class="title flex-center">
-                                <span class="post-nav-title-item">Markdown快速入门</span>
+                                <span class="post-nav-title-item"></span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex-center">
@@ -443,7 +484,7 @@
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Ubuntu%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.</span> <span class="nav-text">Ubuntu系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1"><span class="nav-number">1.1.</span> <span class="nav-text">1.</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1.文件系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E7%94%A8%E6%88%B7%E7%9B%AE%E5%BD%95"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2.用户目录</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%88%9B%E5%BB%BA%E7%9B%AE%E5%BD%95%E5%92%8C%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.</span> <span class="nav-text">2.创建目录和文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E6%96%87%E4%BB%B6%E5%88%97%E8%A1%A8ls"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1.文件列表ls</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E4%BD%8D%E7%BD%AE"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2.显示当前位置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-%E5%88%87%E6%8D%A2%E7%9B%AE%E5%BD%95cd"><span class="nav-number">1.3.</span> <span class="nav-text">2.3.切换目录cd</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-%E5%87%A0%E4%B8%AA%E7%89%B9%E6%AE%8A%E7%9A%84%E7%9B%AE%E5%BD%95"><span class="nav-number">1.3.1.</span> <span class="nav-text">2.4.几个特殊的目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-%E7%9B%AE%E5%BD%95%E6%93%8D%E4%BD%9C"><span class="nav-number">1.3.2.</span> <span class="nav-text">2.5.目录操作</span></a></li></ol></li></ol></li></ol>
     </div>
 </div>
         </aside>
